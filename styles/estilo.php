@@ -65,7 +65,7 @@ form{
 .btn {
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color:#0000004d;
