@@ -92,14 +92,13 @@ $u=rand(5,0);
 
 .shield{
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     text-align:center;
     line-height: 110%;
     margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
 }
 .img1 {
-
-    width: 10%;
-    height: auto;
+    width: 12%;
+    height: 12%;
 }
