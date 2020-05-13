@@ -17,6 +17,7 @@ $u=rand(5,0);
 .body1{
     background-image: url('back.jpg');
     background-size: 100% 100%;
+    background-repeat: repeat-x;
 }
 .div1{
     margin-left:auto;
