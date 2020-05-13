@@ -15,7 +15,7 @@
     </header>
     <div class="div1" style="margin-top:50px">
         <div class="div2">
-            <form action="validacion.php">
+            <form align="center" action="validacion.php">
             <label class="active">Usuario</label>
             <input type="text" placeholder="Usuario" name="user" class="text">
 

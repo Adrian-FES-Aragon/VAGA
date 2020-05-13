@@ -11,7 +11,7 @@ $u=rand(5,0);
 ?>
 
 body { 
-    background-color: '#3A3A3B'; 
+    background-color: #3A3A3B; 
 }
 
 div{
@@ -59,5 +59,5 @@ h2{
 }
 form{
     width: 40%;
-    text-align:center;
+    
 }
