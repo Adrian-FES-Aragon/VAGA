@@ -20,6 +20,13 @@ $u=rand(5,0);
     margin-bottom: 20px;
     display: block; 
     font-weight: lighter;
+}
+.div2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block; 
+    font-weight: lighter;
 
 }
 
