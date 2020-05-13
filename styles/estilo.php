@@ -22,10 +22,11 @@ div{
 }
 
 div2{
-    margin-up: auto;
+
     margin-left: -30%;
     margin-right: -30%;
     margin-bottom: 20px;
+    display: block;
 }
 
 h2{
