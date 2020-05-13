@@ -21,7 +21,10 @@ div{
     display: block;
 }
 div2{
-    width: 50%;
+
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
 
 }
 
