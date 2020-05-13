@@ -63,15 +63,15 @@ form{
 
 }
 .btn {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #f1f1f1;
   color: black;
-  font-size: 16px;
-  padding: 16px 30px;
+  font-size: 1.4em;
+  padding: 12px 26px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
