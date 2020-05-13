@@ -10,7 +10,7 @@ $i=rand(0,0);
 $u=rand(5,0);
 ?>
 */
-.body1{
+body{
     background-attachment: fixed;
     background-image: url('back.jpg');
     background-size: 100% 100%;
