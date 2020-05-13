@@ -15,7 +15,7 @@ $u=rand(5,0);
 }
 
 .div1{
-    margin-left: 15%;
+    margin-left:auto;
     margin-right: auto;
     margin-bottom: 20px;
     display: block; 
@@ -34,7 +34,6 @@ $u=rand(5,0);
     text-align:center;
     font-weight: lighter;
     font-size: 3.56rem;
-    margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
 }
 
@@ -105,6 +104,6 @@ $u=rand(5,0);
     color: white;
 }
 .img1 {
-    width: 12%;
-    height: 12%;
+    width: 10%;
+    height: 10%;
 }
