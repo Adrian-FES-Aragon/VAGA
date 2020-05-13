@@ -18,7 +18,8 @@ div{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    display: block;
+    display: block; 
+    color: white;
 }
 
 div2{
