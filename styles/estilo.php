@@ -21,8 +21,7 @@ div{
     display: block;
 }
 div2{
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    width: 50%;
 
 }
 
