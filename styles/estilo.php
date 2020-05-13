@@ -20,9 +20,11 @@ div{
     margin-bottom: 20px;
     display: block;
 }
+
 div2{
-    margin-left: auto;
-    margin-right: auto;
+    margin-up: auto;
+    margin-left: -30%;
+    margin-right: -30%;
     margin-bottom: 20px;
 }
 
