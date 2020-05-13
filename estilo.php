@@ -20,7 +20,8 @@ $u=rand(5,0);
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 20px;
-    display: block; 
+    display: block;
+    text-align:left; 
     font-weight: lighter;
 }
 .div2{
@@ -28,7 +29,7 @@ $u=rand(5,0);
     margin-bottom: 20px;
     display: block; 
     font-weight: lighter;
-
+    text-align:left;
 }
 
 .h21{
