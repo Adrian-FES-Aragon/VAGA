@@ -71,7 +71,7 @@ $u=rand(5,0);
 
 }
 
-input[type=submit], {
+input[type=button] input[type=submit] {
   position: center;
   top: 50%;
   left: 40%;
