@@ -100,6 +100,6 @@ $u=rand(5,0);
 }
 img {
     align-self: flex-start;
-    width: 100%;
+    width: 10%;
     height: auto;
 }
