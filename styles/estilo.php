@@ -59,6 +59,6 @@ h2{
     color: white;
 }
 form{
-    width: 60%;
+    width: 55%;
 
 }
