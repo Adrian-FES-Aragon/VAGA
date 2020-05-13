@@ -92,8 +92,9 @@ $u=rand(5,0);
     display:flex;
     justify-content:flex-start;
     line-height: 110%;
-    margin-left: 20%;
-    margin: 2.3733333333rem 0 1.424rem 0;
+    margin-left: 1%;
+    margin-top: 1%;
+ 
 }
 .shield{
     display:flex;
