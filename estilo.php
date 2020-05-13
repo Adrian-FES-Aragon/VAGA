@@ -22,7 +22,7 @@ $u=rand(5,0);
     font-weight: lighter;
 }
 .div2{
-    margin-left: auto;
+    margin-left: 15%;
     margin-right: auto;
     margin-bottom: 20px;
     display: block; 
