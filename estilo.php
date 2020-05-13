@@ -32,7 +32,7 @@ $u=rand(5,0);
 }
 
 .h21{
-    text-align:center;
+    text-align:cente;
     font-weight: lighter;
     font-size: 3.56rem;
     color: white;
@@ -63,6 +63,7 @@ $u=rand(5,0);
     font-weight: lighter;
     font-size: 1.4em;
     color: white;
+    text-align: left;
 }
 .form1{
     width: 45%;
