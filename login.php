@@ -1,5 +1,5 @@
 <?php  
-$dbhost="localhost";
+$dbhost="localhost/VAGA";
 $dbuser="root";
 $dbpass="";
 $dbname="test";
