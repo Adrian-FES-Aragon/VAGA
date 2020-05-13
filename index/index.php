@@ -7,7 +7,8 @@
     <title>Login</title>
 </head>
 <body>
-    <header><h2 text-align="center">Login</h2></header>
+
+    <header><h2>Login</h2></header>
     
 </body>
 </html>
