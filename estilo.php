@@ -94,12 +94,13 @@ $u=rand(5,0);
     justify-content:flex-start;
     line-height: 110%;
     margin-left: 5%;
+    margin: 2.3733333333rem 0 1.424rem 0;
 }
 .shield{
     display:flex;
     justify-content:center;
     text-align:center;
-    line-height: 100%;
+    line-height: 110%;
     margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
 }
