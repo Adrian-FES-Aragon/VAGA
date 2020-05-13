@@ -15,7 +15,7 @@ body {
 }
 
 div{
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
     margin-bottom: 20px;
     display: block; 
