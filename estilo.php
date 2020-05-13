@@ -90,6 +90,7 @@ $u=rand(5,0);
 }
 
 .shield{
+    display:flex;
     align-content: space-between;
     text-align:center;
     line-height: 110%;
