@@ -32,7 +32,8 @@ h2{
     color: white;
 }
 
-.text{
+.text{    
+    font-size: 1.3em;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9e9e9e;
@@ -40,7 +41,6 @@ h2{
     outline: none;
     height: 3rem;
     width: 100%;
-    font-size: 16px;
     margin: 0 0 8px 0;
     padding: 0;
     -webkit-box-shadow: none;

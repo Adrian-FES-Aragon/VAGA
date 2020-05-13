@@ -17,7 +17,7 @@
         <div class="div2">
             <form action="validacion.php">
             <label class="active">User</label>
-            <input type="text" placeholder="Usuario" name="user" class="text">
+            <input type="text" placeholder="Usuario" name="Usuario" class="text">
 
             </form>
         </div>
