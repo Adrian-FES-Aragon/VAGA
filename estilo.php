@@ -11,7 +11,6 @@ $u=rand(5,0);
 ?>
 */
 body{
-    background-attachment: fixed;
     background-image: url('back.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
