@@ -16,8 +16,8 @@
     <div class="div1" style="margin-top:50px">
         <div class="div2">
             <form action="validacion.php">
-            <label class="active">User</label>
-            <input type="text" placeholder="Usuario" name="Usuario" class="text">
+            <label class="active">Usuario</label>
+            <input type="text" placeholder="Usuario" name="user" class="text">
 
             </form>
         </div>

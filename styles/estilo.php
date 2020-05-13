@@ -57,3 +57,6 @@ h2{
     font-size: 1.4em;
     color: white;
 }
+form{
+    width: 40%;
+}
