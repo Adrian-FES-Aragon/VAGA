@@ -91,5 +91,5 @@ $u=rand(5,0);
 }
 
 .shield{
-    align-content: center;
+    align-content: flex-end;
 }
