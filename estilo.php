@@ -89,3 +89,7 @@ $u=rand(5,0);
   background-color: lightgray;
   color: black;
 }
+
+.shield{
+    align-content: center;
+}
