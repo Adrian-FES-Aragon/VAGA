@@ -14,6 +14,13 @@ body {
     background-color: <?=$color[$i]?>;
 }
 
+div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
 h2{
     text-align:center;
     color: black;
