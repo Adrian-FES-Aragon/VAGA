@@ -70,7 +70,7 @@ $u=rand(5,0);
 
 }
 .btn1 {
-  position: relative;
+  position: center;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
