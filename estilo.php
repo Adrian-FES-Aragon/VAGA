@@ -10,7 +10,7 @@ $i=rand(0,0);
 $u=rand(5,0);
 ?>
 */
-body{
+.body1{
     background-image: url('back.jpg') repeat center fixed;
     background-size: cover;
     position:relative;
