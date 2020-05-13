@@ -99,6 +99,7 @@ $u=rand(5,0);
     color: white;
 }
 img {
-  width: 100%;
-  height: auto;
+    display:flex;
+    width: 100%;
+    height: auto;
 }
