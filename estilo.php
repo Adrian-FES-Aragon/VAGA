@@ -92,4 +92,8 @@ $u=rand(5,0);
 
 .shield{
     align-content: flex-end;
+    text-align:center;
+    line-height: 110%;
+    margin: 2.3733333333rem 0 1.424rem 0;
+    color: white;
 }
