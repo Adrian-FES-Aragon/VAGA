@@ -10,11 +10,11 @@ $i=rand(0,0);
 $u=rand(5,0);
 ?>
 
-body { 
+.body1 { 
     background-color: #3A3A3B; 
 }
 
-div{
+.div1{
     margin-left: 15%;
     margin-right: auto;
     margin-bottom: 20px;
@@ -23,7 +23,7 @@ div{
 
 }
 
-h2{
+.h21{
     text-align:center;
     font-weight: lighter;
     font-size: 3.56rem;
@@ -32,7 +32,7 @@ h2{
     color: white;
 }
 
-.text{    
+.text1{    
     font-size: 1.3em;
     background-color: transparent;
     border: none;
@@ -53,16 +53,16 @@ h2{
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
     color: white;
 }
-.active{
+.data{
     font-weight: lighter;
     font-size: 1.4em;
     color: white;
 }
-form{
+.form1{
     width: 55%;
 
 }
-.btn {
+.btn1 {
   position: relative;
   top: 50%;
   left: 40%;
@@ -78,7 +78,7 @@ form{
   text-align: center;
 }
 
-.btn:hover {
+.btn1:hover {
   background-color: lightgray;
   color: black;
 }
