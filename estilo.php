@@ -11,9 +11,10 @@ $u=rand(5,0);
 ?>
 */
 body{
-    background-image: url('back.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url('back.jpg') repeat center fixed;
+    background-size: cover;
+    position:relative;
+    height:auto;
 }
 .div1{
     margin-left:auto;
