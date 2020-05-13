@@ -20,20 +20,11 @@ div{
     margin-bottom: 20px;
     display: block; 
     color: white;
-}
-
-div2{
-
-    margin-left: -30%;
-    margin-right: -30%;
-    margin-bottom: 20px;
-    display: block;
+    font-weight: lighter;
 }
 
 h2{
     text-align:center;
-    color: black;
-    font-size: 2em;
     font-weight: lighter;
     font-size: 3.56rem;
     line-height: 110%;
