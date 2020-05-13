@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="estilo.php">
+    <link rel="stylesheet" type="text/css" href="../styles/estilo.php">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -15,14 +15,14 @@
     </header>
     <div class="div1" style="margin-top:50px">
         <div class="div2">
-            <form action="login.php" method="post">
+            <form action="validacion.php">
                 <div>
                     <label class="active">Usuario</label>
-                    <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user" required>
+                    <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user">
                 </div>
                 <div>
                     <label class="active">Contraseña</label>
-                    <input type="password" class="text" placeholder="Contraseña de usuario" id="pwd" name="pwd" required>
+                    <input type="password" class="text" placeholder="Contraseña de usuario" id="pwd" name="pwd">
                 </div>
                 <br>
                 <button type="submit" class="btn">INICIAR SESION</button>
