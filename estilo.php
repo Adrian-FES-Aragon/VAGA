@@ -9,9 +9,9 @@ $color[1]='#636468';
 $i=rand(0,0);
 $u=rand(5,0);
 ?>
-*/
+
 .body1{
-    background-image: url('back.jpg') repeat center fixed;
+    background: url('back.jpg') repeat center fixed;
     background-size: cover;
     position:relative;
     height:auto;
