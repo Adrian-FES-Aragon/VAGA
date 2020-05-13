@@ -36,6 +36,7 @@ $u=rand(5,0);
     font-size: 3.56rem;
     margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
+    margin-left: 6%;
 }
 
 .text1{    
@@ -65,7 +66,7 @@ $u=rand(5,0);
     color: white;
 }
 .form1{
-    width: 55%;
+    width: 45%;
 
 }
 .btn1 {
