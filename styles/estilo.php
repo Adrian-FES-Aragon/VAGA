@@ -68,9 +68,9 @@ form{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 1.4em;
+  background-color: #000000;
+  color: white;
+  font-size: 1em;
   padding: 12px 26px;
   border: none;
   cursor: pointer;
@@ -79,6 +79,6 @@ form{
 }
 
 .btn:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
