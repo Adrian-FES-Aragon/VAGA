@@ -98,7 +98,7 @@ $u=rand(5,0);
     margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
 }
-img {
+.img1 {
     margin-left: -80%
     width: 10%;
     height: auto;
