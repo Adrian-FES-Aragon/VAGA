@@ -15,12 +15,12 @@ body {
 }
 
 div{
-    margin-left: 25%;
+    margin-left: 15%;
     margin-right: auto;
     margin-bottom: 20px;
     display: block; 
     font-weight: lighter;
-    text-align: center;
+
 }
 
 h2{
@@ -59,6 +59,6 @@ h2{
     color: white;
 }
 form{
-    width: 40%;
+    width: 60%;
 
 }
