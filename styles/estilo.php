@@ -20,6 +20,7 @@ div{
     margin-bottom: 20px;
     display: block; 
     font-weight: lighter;
+    text-align: center;
 }
 
 h2{
@@ -59,5 +60,5 @@ h2{
 }
 form{
     width: 40%;
-    
+
 }
