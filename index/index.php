@@ -1,35 +1,22 @@
+<?php
+session_start();
+include('includes/conexion.php');
+include("includes/sesion.php");
+$result = mysqli_query($con, "SELECT * FROM usuarios WHERE correo='$correo'") or die('Error en la sesion');
+$row = mysqli_fetch_array($result);
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../styles/estilo.php">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta charset=“utf-8“>
+    <meta http-equiv=“X-UA-Compatible“ content=“IE=edge“>
+    <title>Bienvenido</title>
+    <link rel=“stylesheet“ href=““>
 </head>
 
 <body>
-
-    <header>
-        <h2>Login</h2>
-    </header>
-    <div class="div1" style="margin-top:50px">
-        <div class="div2">
-            <form action="validacion.php">
-                <div>
-                    <label class="active">Usuario</label>
-                    <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user">
-                </div>
-                <div>
-                    <label class="active">Contraseña</label>
-                    <input type="password" class="text" placeholder="Contraseña de usuario" id="pwd" name="pwd">
-                </div>
-                <br>
-                <button class="btn">INICIAR SESION</button>
-                <button class="btn">REGISTRARSE</button>
-            </form>
-        </div>
-    </div>
+    <h2>Bienvenido <?php echo $row['nombre']; ?></h2>
 </body>
 
 </html>
