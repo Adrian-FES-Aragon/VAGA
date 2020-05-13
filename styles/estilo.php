@@ -6,7 +6,7 @@ $color[1]='#636468';
 
 
 // Elijo un color aleatorio
-$i=rand(0,1);
+$i=rand(0);
 $u=rand(5,0);
 ?>
 
@@ -59,4 +59,5 @@ h2{
 }
 form{
     width: 40%;
+    align: center;
 }
