@@ -19,7 +19,6 @@ div{
     margin-right: auto;
     margin-bottom: 20px;
     display: block; 
-    color: white;
     font-weight: lighter;
 }
 
@@ -51,5 +50,10 @@ h2{
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    color: white;
+}
+.active{
+    font-weight: lighter;
+    font-size: 1.4em;
     color: white;
 }
