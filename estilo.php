@@ -73,8 +73,6 @@ $u=rand(5,0);
   position: center;
   top: 50%;
   left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color:#0000004d;
   color: white;
   font-size: 1em;
