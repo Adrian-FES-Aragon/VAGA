@@ -15,10 +15,13 @@
     </header>
     <div class="div1" style="margin-top:50px">
         <div class="div2">
-            <form align="center" action="validacion.php">
-            <label class="active">Usuario</label>
-            <input type="text" placeholder="Usuario" name="user" class="text">
-
+            <form action="validacion.php">
+                <label class="active">Usuario</label>
+                <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user">
+                <div class="div1">
+                <label class="active">Contraseña</label>
+                <input type="password" class="text" placegolder="Contraseña de usuario" id="pwd" name="pwd">
+                </div>
             </form>
         </div>
     </div>
