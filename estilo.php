@@ -70,7 +70,8 @@ $u=rand(5,0);
     width: 45%;
 
 }
-.btn1 {
+
+input[type=submit], {
   position: center;
   top: 50%;
   left: 40%;
@@ -84,7 +85,7 @@ $u=rand(5,0);
   text-align: center;
 }
 
-.btn1:hover {
+input[type=button], input[type=submit]:hover {
   background-color: lightgray;
   color: black;
 }
