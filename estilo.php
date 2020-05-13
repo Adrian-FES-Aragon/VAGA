@@ -90,9 +90,17 @@ $u=rand(5,0);
   color: black;
 }
 
+.headr{
+    display:flex;
+    justify-content:flex-start;
+    text-align:center;
+    line-height: 110%;
+    margin: 2.3733333333rem 0 1.424rem 0;
+    color: white;
+}
 .shield{
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     text-align:center;
     line-height: 110%;
     margin: 2.3733333333rem 0 1.424rem 0;
