@@ -9,15 +9,12 @@ $color[1]='#636468';
 $i=rand(0,0);
 $u=rand(5,0);
 ?>
-/*
-.body1 { 
-    background-color: #3A3A3B; 
-}
 */
 .body1{
+    background-attachment: fixed;
     background-image: url('back.jpg');
     background-size: 100% 100%;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 .div1{
     margin-left:auto;
