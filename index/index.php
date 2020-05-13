@@ -21,10 +21,12 @@
                     <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user">
                 </div>
                 <div>
-
                     <label class="active">Contraseña</label>
                     <input type="password" class="text" placeholder="Contraseña de usuario" id="pwd" name="pwd">
                 </div>
+                <br>
+                <button class="btn">INICIAR SESION</button>
+                <button class="btn">REGISTRARSE</button>
             </form>
         </div>
     </div>
