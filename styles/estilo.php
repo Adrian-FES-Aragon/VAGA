@@ -20,6 +20,11 @@ div{
     margin-bottom: 20px;
     display: block;
 }
+div2{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+
+}
 
 h2{
     text-align:center;
