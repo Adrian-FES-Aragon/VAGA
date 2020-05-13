@@ -85,7 +85,7 @@ input[type=button] input[type=submit] {
   text-align: center;
 }
 
-input[type=button], input[type=submit]:hover {
+input[type=button] input[type=submit]:hover {
   background-color: lightgray;
   color: black;
 }
