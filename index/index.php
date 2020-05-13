@@ -18,7 +18,7 @@
             <form action="validacion.php">
                 <label class="active">Usuario</label>
                 <input type="text" class="text" placeholder="Nombre de usuario" id="user" name="user">
-                <div class="div1">
+                <div>
                 <label class="active">Contraseña</label>
                 <input type="password" class="text" placegolder="Contraseña de usuario" id="pwd" name="pwd">
                 </div>
