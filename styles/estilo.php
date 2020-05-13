@@ -21,11 +21,9 @@ div{
     display: block;
 }
 div2{
-
-    display: block;
-    margin-top: 0em;
-    margin-block-end: 1em;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 h2{
