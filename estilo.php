@@ -98,3 +98,7 @@ $u=rand(5,0);
     margin: 2.3733333333rem 0 1.424rem 0;
     color: white;
 }
+img {
+  width: 100%;
+  height: auto;
+}
