@@ -1,15 +1,12 @@
 <?php header("Content-type: text/css");
 
 //Creo un array con varios colores
-$color[0]='#FF5733';
-$color[1]='#33E0FF';
-$color[2]='#8D33FF';
-$color[3]='#FFCA33';
-$color[4]='#90FF33';
-$color[5]='#335BFF';
+$color[0]='#3A3A3B';
+$color[1]='#636468';
+
 
 // Elijo un color aleatorio
-$i=rand(0,5);
+$i=rand(0,1);
 $u=rand(5,0);
 ?>
 
@@ -25,4 +22,5 @@ h2{
     font-size: 3.56rem;
     line-height: 110%;
     margin: 2.3733333333rem 0 1.424rem 0;
+    color: white;
 }
