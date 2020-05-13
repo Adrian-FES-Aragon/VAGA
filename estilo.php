@@ -99,7 +99,7 @@ $u=rand(5,0);
     color: white;
 }
 .img1 {
-    margin-left: -80%
+
     width: 10%;
     height: auto;
 }
