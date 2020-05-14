@@ -20,7 +20,8 @@ if($nr == 1){
     echo "Bienvenido: " .$nombre;
 }
 else if ($nr == 0){
-    echo "No ingreso";
+    header("location: index.html");
+    
 }
 
 ?>
