@@ -20,7 +20,8 @@ if($nr == 1){
     echo "Bienvenido: " .$nombre;
 }
 else if ($nr == 0){
-    header("location: https://www.antevenio.com/wp-content/uploads/2017/08/thebodyshop.png");
+    echo
+    header("HTTP/1.0 404 Not Found");
     
 }
 
