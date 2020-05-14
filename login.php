@@ -20,7 +20,7 @@ if($nr == 1){
     echo "Bienvenido: " .$nombre;
 }
 else if ($nr == 0){
-    header("location: index.html");
+    header("location: https://www.antevenio.com/wp-content/uploads/2017/08/thebodyshop.png");
     
 }
 
