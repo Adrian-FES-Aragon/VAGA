@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="estilo.php">
+    <link rel="stylesheet" type="text/css" href="assets/estilo.php">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
 </head>
 
 <body class="body1">
-    <header class="headr">
-        <img src="vagawhite.png" alt="Logo" class="img1">
-    </header>
+    <?php
+    include("assets/header.php");
+    ?>
     <header class="shield">
 
         <svg class="bi bi-shield-lock-fill  " width=" 5em " height=" 5em " viewBox=" 0 0 16 16 " fill=" white " xmlns=" http://www.w3.org/2000/svg">

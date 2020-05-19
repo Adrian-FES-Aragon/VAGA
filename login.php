@@ -2,7 +2,7 @@
 $dbhost="localhost";
 $dbuser="root";
 $dbpass="";
-$dbname="test";
+$dbname="php_test";
 
 $conn=mysqli_connect($dbhost, $dbuser,$dbpass,$dbname);
 if(!$conn){
@@ -12,12 +12,13 @@ if(!$conn){
 $nombre=$_POST["txtusuario"];
 $pass=$_POST["txtpassword"];
 
-$query=mysqli_query($conn, "SELECT * FROM login WHERE usuario ='".$nombre."' and password = '".$pass."'");
+$query=mysqli_query($conn, "SELECT * FROM usuarios WHERE NOMBRE ='".$nombre."' and PASSWORD = '".$pass."'");
 $nr=mysqli_num_rows($query);
 
 if($nr == 1){
     //header("location: pagina.html")
     echo "Bienvenido: " .$nombre;
+    header("location: consulta.php");
 }
 else if ($nr == 0){
     echo
