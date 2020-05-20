@@ -27,7 +27,7 @@
     <div class=" div1 " style=" margin-top:50px ">
         <div class=" div2 ">
             <center>
-                <form method="POST" action="login.php" class="form1">
+                <form method="POST" action="verificacion.php" class="form1">
                     <div class="div2">
                         <label class="data">Usuario</label>
                         <input type="text " name="txtusuario" class="text1 data" placeholder="Nombre de usuario" />

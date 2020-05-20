@@ -1,5 +1,6 @@
 <link rel="Shortcut icon" href="assets/vicon.png">
 <link rel="stylesheet" type="text/css" href="assets/estilo.php">
+
 <?php
 include("assets/header.php");
 echo "<h1 class='h21'>REGISTROS</h1>";
