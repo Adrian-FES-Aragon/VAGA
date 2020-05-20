@@ -40,6 +40,7 @@ if ($count > 0) {
 } else {
     echo "<h1 style='color:red'>  Sin ningun registro</h1>";
 }
+echo "<script language='javascript'>alert('HOLA DE NUEVO');</script>";
 ?>
 
 

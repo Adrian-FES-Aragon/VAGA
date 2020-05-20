@@ -17,11 +17,10 @@ $nr=mysqli_num_rows($query);
 
 if($nr == 1){
     //header("location: pagina.html")
-    echo "Bienvenido: " .$nombre;
     header("location: consulta.php");
+    echo "Bienvenido: " .$nombre;
 }
 else if ($nr == 0){
-    echo
     header("HTTP/1.0 404 Not Found");
     
 }
