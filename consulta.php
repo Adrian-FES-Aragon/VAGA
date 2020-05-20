@@ -1,6 +1,8 @@
+<link rel="Shortcut icon" href="assets/vicon.png">
+<link rel="stylesheet" type="text/css" href="assets/estilo.php">
 <?php
 include("assets/header.php");
-
+echo "<h1 class='h21'>REGISTROS</h1>";
 //se usa el require para requerir obligatoriamente el archivo conexion 
 //no es requisito obligatorio, independiente de los erroes
 //include("conexion.php");
@@ -39,7 +41,9 @@ if ($count > 0) {
 }
 ?>
 
-<style>
+
+<title>Consulta</title>
+<style>     
     body {
         background: url('assets/back2.jpg') repeat center fixed;
         color: white;
@@ -62,7 +66,6 @@ if ($count > 0) {
 
     td {
         padding: 5px 25px;
-
         vertical-align: center;
         border-bottom: 1px solid #ddd;
         border-radius: 15px 50px;

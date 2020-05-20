@@ -1,6 +1,6 @@
 <?php
 echo"<header class='headr'>
-        <img src='vagawhite.png' alt='Logo' class='img1'>
+        <img src='assets/vagawhite.png' alt='Logo' class='img1'>
     </header>";
 ?>
 
