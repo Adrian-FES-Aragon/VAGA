@@ -5,6 +5,7 @@ USE `php_test`;
 
 CREATE TABLE `usuarios` (
 `id` int(99) NOT NULL,
+`user` varchar(30) NOT NULL,
 `nombre` varchar(300) NOT NULL,
 `correo` varchar(300) NOT NULL,
 `password` varchar(450) NOT NULL,
@@ -12,8 +13,8 @@ CREATE TABLE `usuarios` (
 `perm` int(11) NOT NULL DEFAULT '2'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `password`,`date`,`perm`) VALUES
-(1, 'adrian', 'adrian@hotmail.com', '123456','2018-10-30 20:22:01',1);
+INSERT INTO `usuarios` (`id`,`user`, `nombre`, `correo`, `password`,`date`,`perm`) VALUES
+(1, 'adrian','Tomas Adrian Garcia Chavez', 'adrian@hotmail.com', '123456','2020-5-21 21:30:00',1);
 
 
 ALTER TABLE `usuarios`

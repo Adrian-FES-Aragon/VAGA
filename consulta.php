@@ -31,6 +31,7 @@ if (!isset($carry)) {
     <tr>
     <th>ID</th>
     <th>Usuario</th>
+    <th>Nombre completo</th>
     <th>Correo</th>
     <th>Contraseña</th>
     <th>Fecha de registro</th>
@@ -43,6 +44,7 @@ if (!isset($carry)) {
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo "<tr>";
             echo "<td>" . $row['id'] .         "</td>";
+            echo "<td>" . $row['user'] .     "</td>";
             echo "<td>" . $row['nombre'] .     "</td>";
             echo "<td>" . $row['correo'] .     "</td>";
             echo "<td>" . $row['password'] .   "</td>";
