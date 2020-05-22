@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
 </head>
-
 <body class="body1">
     <?php
     include("assets/header.php");
@@ -24,32 +23,26 @@
     </header>
 
     <div class=" div1 " style=" margin-top:50px ">
-        <div class="div2">
-            <div align="center">
-                <form action="logica/logica_registro.php" method="POST" class="form1">
-                    <div class="div2">
-                        <label for="nombre_usuario" class="data"> Usuario: </label><br>
-                        <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" require>
 
-                        <br><br>
-
-                        <label for="nombre_completo" class="data"> Nombre: </label><br>
-                        <input type="text" class="text1 data" name="nombre_completo" maxlength="155" placeholder=" Nombre completo" require>
-                        <br><br>
-
-                        <label for="email" class="data"> Email: </label><br>
-                        <input type="email" class="text1 data" name="email" maxlength="155" placeholder=" Correo electronico" require>
-                        <br><br>
-
-                        <label for="password" class="data"> Contraseña: </label><br>
-                        <input type="password" class="text1 data" name="password" maxlength="155" placeholder=" Contraseña elegida" require>
-                        <br><br>
-
-                    </div>
-                    <input type="submit" name="submit" value="ACEPTAR" class="btn1">
-                    <input type="reset" name="clear" value="BORRAR CAMPOS" class="btn1">
-                </form>
-            </div>
+        <div align="center">
+            <form action="logica/logica_registro.php" method="POST" class="form1">
+                <div class="div2">
+                    <label for="nombre_usuario" class="data"> Usuario: </label><br>
+                    <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" required>
+                    <br><br>
+                    <label for="nombre_completo" class="data"> Nombre: </label><br>
+                    <input type="text" class="text1 data" name="nombre_completo" maxlength="255" placeholder=" Nombre completo" required>
+                    <br><br>
+                    <label for="email" class="data"> Email: </label><br>
+                    <input type="email" class="text1 data" name="email" maxlength="35" placeholder=" Correo electronico" required>
+                    <br><br>
+                    <label for="password" class="data"> Contraseña: </label><br>
+                    <input type="password" class="text1 data" name="password" maxlength="10" placeholder=" Contraseña elegida" required>
+                    <br><br>
+                </div>
+                <input type="submit" name="submit" value="ACEPTAR" class="btn1">
+                <input type="reset" name="clear" value="BORRAR CAMPOS" class="btn1">
+            </form>
         </div>
     </div>
 </body>
