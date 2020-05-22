@@ -10,7 +10,7 @@ include("assets/header.php");
 if (!isset($carry)) {
     header("location: index.php");
 } else {
-    echo"<br>";
+    echo "<br>";
     echo "Bienvenido: $carry";
 
     echo "<h1 class='h21'>REGISTROS</h1>";
@@ -57,22 +57,26 @@ if (!isset($carry)) {
         echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
 }
-echo"<br>";
-echo "<a href='./logica/salir.php'>Salir</a>";  //href sirve para redireccionar a otra pagina
+echo "<br>";
+
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='TERMINAR SESION' class='btn1'> ";
+
+
 ?>
 
 <title>Consulta</title>
 <style>
     a {
-
-        color:white;
+        color: white;
     }
 
     body {
         background: url('assets/back2.jpg') repeat center fixed;
         color: white;
         background-size: cover;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     table {

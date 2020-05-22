@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="../assets/estilo.php">
+<link rel="Shortcut icon" href="../assets/vicon.png">
 <?php
 require "conexion.php";
 //conexion a la DB
@@ -13,8 +15,18 @@ $result=$conn->query($buscarUsuario);
 $count=mysqli_num_rows($result);
 //se hace la validacion del resultado para saber si esta registrado 
 if ($count == 1 ) { //se se encentra algun reegistro
-    echo"<h1>'El Usuario: ' ".$_POST['nombre_usuario']. "' Ya esta registrado'</h1>";
-    echo "<a href='../registro.php'>Hacer Registro</a>";
+    echo"<body class='sansserif'> 
+    <title>ERROR</title>
+    <div align='center'>
+    <h1><br><br><br>El Usuario:  ".$_POST['nombre_usuario']. " 
+    <br>
+    Ya esta registrado</h1> 
+    <br>
+    <input type='button' style='font-size:.6em' onclick='location.href=`../registro.php`' value='NUEVO REGISTRO' class='btn1'> 
+    
+    </div>
+    </body>";
+    
 }else{//se registra al usuario
     //query para mandar el registro
     mysqli_query($conn, "INSERT INTO USUARIOS (
@@ -29,8 +41,34 @@ if ($count == 1 ) { //se se encentra algun reegistro
     '$_POST[password]'
     
     )");
-    echo"<h1> Usuario registrado exitosamente</h1>";
-    echo"<h2>Bienvenido: ".$_POST['nombre_usuario']. "</h2>";
-    echo "<h5>" . "<a href='../index.php'>Iniciar Sesión</a>" . "</h5>";
+    echo"<body class='sansserif'>
+    <title>REGISTRADO</title>
+    <div align='center'>
+    <h1> <br><br><br>Usuario registrado exitosamente</h1> <br>
+    <h2>Bienvenido: ".$_POST['nombre_usuario']. "</h2> <br>
+    <input type='button' style='font-size:.6em' onclick='location.href=`../index.php`' value='INICIAR SESION' class='btn1'>     
+    </div>
+    </body>
+    ";
 }
 ?>
+<title></title>
+<style>
+
+    body {
+        
+        background: url('../assets/back2.jpg') repeat center fixed;
+        color: #ED5A3D;
+        background-size: cover;
+        font-size: 2em;
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
