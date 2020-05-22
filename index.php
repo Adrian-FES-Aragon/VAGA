@@ -26,11 +26,11 @@
     </header>
     <div class=" div1 " style=" margin-top:50px ">
         <div class=" div2 ">
-            <center>
-                <form method="POST" action="verificacion.php" class="form1">
+            <div align="center">
+                <form method="POST" action="./logica/verificacion.php" class="form1" align="center">
                     <div class="div2">
                         <label class="data">Usuario</label>
-                        <input type="text " name="txtusuario" class="text1 data" placeholder="Nombre de usuario" />
+                        <input type="text " name="txtusuario" class="text1 data" placeholder=" Nombre de usuario " />
                     </div>
                     <div class="div2">
                         <label class="data">Contraseña</label>
@@ -40,9 +40,10 @@
                     <input type="submit" value="INICIAR SESION" class="btn1" />
                     <input type="button" onclick="alert('registro.php')" value="REGISTRARSE" class="btn1">
                 </form>
+            </div>
         </div>
     </div>
-    </center>
+
 </body>
 
 </html>

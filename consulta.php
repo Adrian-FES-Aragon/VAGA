@@ -2,20 +2,30 @@
 <link rel="stylesheet" type="text/css" href="assets/estilo.php">
 
 <?php
-include("assets/header.php");
-echo "<h1 class='h21'>REGISTROS</h1>";
-//se usa el require para requerir obligatoriamente el archivo conexion 
-//no es requisito obligatorio, independiente de los erroes
-//include("conexion.php");
-$conexion = new mysqli('127.0.0.1', 'root', '', 'php_test');
-//generar el query
-$consulta_sql = "SELECT * FROM USUARIOS";
-//mandar el query por medio de la conexion y almacenaremos en una variable
-$resultado = $conexion->query($consulta_sql);
-//retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
-$count = mysqli_num_rows($resultado);
+session_start();
+$carry = $_SESSION['noCuenta'];
 
-echo "<body  class='sansserif'>
+include("assets/header.php");
+
+if (!isset($carry)) {
+    header("location: index.php");
+} else {
+    echo"<br>";
+    echo "Bienvenido: $carry";
+
+    echo "<h1 class='h21'>REGISTROS</h1>";
+    //se usa el require para requerir obligatoriamente el archivo conexion 
+    //no es requisito obligatorio, independiente de los erroes
+    //include("conexion.php");
+    $conexion = new mysqli('127.0.0.1', 'root', '', 'php_test');
+    //generar el query
+    $consulta_sql = "SELECT * FROM USUARIOS";
+    //mandar el query por medio de la conexion y almacenaremos en una variable
+    $resultado = $conexion->query($consulta_sql);
+    //retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
+    $count = mysqli_num_rows($resultado);
+
+    echo "<body  class='sansserif'>
     <div align='center' style='overflow-x:auto'>
     <table >
     <tr>
@@ -23,29 +33,39 @@ echo "<body  class='sansserif'>
     <th>Usuario</th>
     <th>Correo</th>
     <th>Contraseña</th>
+    <th>Fecha de registro</th>
+    <th>Nivel de permisos</th>
     </div>
     </body>";
 
-if ($count > 0) {
-    //aqui se pintarian los registros de la BD 
-    while ($row = mysqli_fetch_assoc($resultado)) {
-        echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
-        echo "<td>" . $row['nombre'] .        "</td>";
-        echo "<td>" . $row['correo'] .      "</td>";
-        echo "<td>" . $row['password'] .       "</td>";
-        echo "</tr>";
+    if ($count > 0) {
+        //aqui se pintarian los registros de la BD 
+        while ($row = mysqli_fetch_assoc($resultado)) {
+            echo "<tr>";
+            echo "<td>" . $row['id'] .         "</td>";
+            echo "<td>" . $row['nombre'] .     "</td>";
+            echo "<td>" . $row['correo'] .     "</td>";
+            echo "<td>" . $row['password'] .   "</td>";
+            echo "<td>" . $row['date'] .       "</td>";
+            echo "<td>" . $row['perm'] .       "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
-    echo "</table>";
-} else {
-    echo "<h1 style='color:red'>  Sin ningun registro</h1>";
 }
-echo "<script language='javascript'>alert('HOLA DE NUEVO');</script>";
+echo"<br>";
+echo "<a href='./logica/salir.php'>Salir</a>";  //href sirve para redireccionar a otra pagina
 ?>
 
-
 <title>Consulta</title>
-<style>     
+<style>
+    a {
+
+        color:white;
+    }
+
     body {
         background: url('assets/back2.jpg') repeat center fixed;
         color: white;
