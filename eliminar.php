@@ -47,7 +47,8 @@
     }
     mysqli_free_result($result);
     echo '<br>
-        <INPUT TYPE="SUBMIT" value="Borrar" class="btn1">
+    <INPUT TYPE="SUBMIT" value="BORRAR" class="btn1" style="font-size:.6em">
+    <input type="button" style="font-size:.6em" onclick="location.href=`./consulta.php`" value="REGRESAR" class="btn1">
         </div>
         </form>';
 }

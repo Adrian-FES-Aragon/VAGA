@@ -14,12 +14,12 @@ if (!isset($carry)) {
     echo "<h1 class='h21'>REGISTROS</h1>";
     //se usa el require para requerir obligatoriamente el archivo conexion 
     //no es requisito obligatorio, independiente de los erroes
-    //include("conexion.php");
-    $conexion = new mysqli('127.0.0.1', 'root', '', 'php_test');
+    include("./logica/conexion.php");
+    //$conexion = new mysqli('127.0.0.1', 'root', '', 'php_test');
     //generar el query
     $consulta_sql = "SELECT * FROM USUARIOS";
     //mandar el query por medio de la conexion y almacenaremos en una variable
-    $resultado = $conexion->query($consulta_sql);
+    $resultado = $conn->query($consulta_sql);
     //retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
     $count = mysqli_num_rows($resultado);
 

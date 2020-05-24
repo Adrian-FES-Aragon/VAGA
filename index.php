@@ -29,11 +29,11 @@
                 <form id="form1" method="POST" action="./logica/verificacion.php" class="form1">
                     <div class="div2">
                         <label class="data">Usuario</label>
-                        <input type="text " name="txtusuario" class="text1 data" placeholder=" Nombre de usuario " />
+                        <input type="text " name="txtusuario" class="text1 data" placeholder=" Nombre de usuario " required/>
                     </div>
                     <div class="div2">
                         <label class="data">Contraseña</label>
-                        <input type="password" name="txtpassword" class="text1 data" placeholder=" Contraseña de usuario " />
+                        <input type="password" name="txtpassword" class="text1 data" placeholder=" Contraseña de usuario " required/>
                     </div>
                     <br>
                     <input type="submit" value="INICIAR SESION" class="btn1" />
