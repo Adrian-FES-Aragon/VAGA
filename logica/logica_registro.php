@@ -14,7 +14,7 @@ $result=$conn->query($buscarUsuario);
 //saber si tenemos un resultado y se almacena en una variable
 $count=mysqli_num_rows($result);
 //se hace la validacion del resultado para saber si esta registrado 
-if ($count == 1 ) { //se se encentra algun reegistro
+if ($count == 1 ) { //si se encentra algun reegistro
     echo"<body class='sansserif'> 
     <title>ERROR</title>
     <div align='center'>
@@ -52,7 +52,7 @@ if ($count == 1 ) { //se se encentra algun reegistro
     ";
 }
 ?>
-<title></title>
+
 <style>
 
     body {

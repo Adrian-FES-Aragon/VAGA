@@ -1,17 +1,15 @@
 <link rel="Shortcut icon" href="assets/vicon.png">
 <link rel="stylesheet" type="text/css" href="assets/estilo.php">
-
 <?php
 session_start();
 $carry = $_SESSION['noCuenta'];
 
 include("assets/header.php");
-
 if (!isset($carry)) {
     header("location: index.php");
 } else {
     echo "<br>";
-    echo "Bienvenido: $carry";
+    echo "<p style='margin-left:5%'>Bienvenido: $carry</p>";
 
     echo "<h1 class='h21'>REGISTROS</h1>";
     //se usa el require para requerir obligatoriamente el archivo conexion 
@@ -77,6 +75,7 @@ echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logi
         color: white;
         background-size: cover;
         font-size: 1.5em;
+        
     }
 
     table {

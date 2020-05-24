@@ -67,6 +67,14 @@ $u=rand(5,0);
     color: white;
     text-align: left;
 }
+.data2{
+    font-weight: lighter;
+    font-size: 1.4em;
+    color: white;
+    background: #302E2E;
+    text-align: left;
+    width: 100%;
+}
 .form1{
     width: 45%;
 
