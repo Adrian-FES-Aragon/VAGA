@@ -59,7 +59,7 @@ echo "<br>";
 
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
-echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='TERMINAR SESION' class='btn1'> ";
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 
 ?>
