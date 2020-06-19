@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="../assets/estilo.php">
-<link rel="Shortcut icon" href="../assets/vicon.png">
 <?php
+echo' <link rel="stylesheet" type="text/css" href="../assets/estilo.php">
+<link rel="Shortcut icon" href="../assets/vicon.png"> ';
 require "conexion.php";
 //conexion a la DB
 
@@ -51,24 +51,24 @@ if ($count == 1 ) { //si se encentra algun reegistro
     </body>
     ";
 }
-?>
-
+echo"
 <style>
 
-    body {
-        
-        background: url('../assets/back2.jpg') repeat center fixed;
-        color: #ED5A3D;
-        background-size: cover;
-        font-size: 2em;
-    }
+body {
+    
+    background: url('../assets/back2.jpg') repeat center fixed;
+    color: #ED5A3D;
+    background-size: 100% 100%;
+    font-size: 2em;
+}
 
 
-    h1 {
+h1 {
         text-align: center;
     }
-
+    
     .sansserif {
         font-family: Arial, Helvetica, sans-serif;
     }
-</style>
+    </style>";
+?>

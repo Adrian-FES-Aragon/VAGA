@@ -1,20 +1,19 @@
-<link rel="Shortcut icon" href="assets/vicon.png">
-<link rel="stylesheet" type="text/css" href="assets/estilo.php">
 <?php
 session_start();
 $carry = $_SESSION['noCuenta'];
 
-include("assets/header.php");
 if (!isset($carry)) {
     header("location: index.php");
 } else {
+    echo'<link rel="Shortcut icon" href="assets/vicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/estilo.php">';
+    include("assets/header.php");
+    
     echo "<br>";
     echo "<p style='margin-left:5%'>Bienvenido: $carry</p>";
-
-    echo "<h1 class='h21'>REGISTROS</h1>";
     //se usa el require para requerir obligatoriamente el archivo conexion 
     //no es requisito obligatorio, independiente de los erroes
-    include("./logica/conexion.php");
+    require("./logica/conexion.php");
     //$conexion = new mysqli('127.0.0.1', 'root', '', 'php_test');
     //generar el query
     $consulta_sql = "SELECT * FROM USUARIOS";
@@ -23,21 +22,22 @@ if (!isset($carry)) {
     //retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
     $count = mysqli_num_rows($resultado);
 
-    echo "<body  class='sansserif'>
-    <div align='center' style='overflow-x:auto'>
-    <table >
-    <tr>
-    <th>ID</th>
-    <th>Usuario</th>
-    <th>Nombre completo</th>
-    <th>Correo</th>
-    <th>Contraseña</th>
-    <th>Fecha de registro</th>
-    <th>Nivel de permisos</th>
-    </div>
-    </body>";
-
+    
     if ($count > 0) {
+        echo "<h1 class='h21'>REGISTROS</h1>";
+        echo "<body  class='sansserif'>
+        <div align='center' style='overflow-x:auto'>
+        <table >
+        <tr>
+        <th>ID</th>
+        <th>Usuario</th>
+        <th>Nombre completo</th>
+        <th>Correo</th>
+        <th>Contraseña</th>
+        <th>Fecha de registro</th>
+        <th>Nivel de permisos</th>
+        </div>
+        </body>";
         //aqui se pintarian los registros de la BD 
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo "<tr>";
@@ -62,8 +62,7 @@ echo "<input type='button' style='font-size:.6em' onclick='location.href=`elimin
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 
-?>
-
+echo "
 <title>Consulta</title>
 <style>
     a {
@@ -114,4 +113,6 @@ echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logi
     .sansserif {
         font-family: Arial, Helvetica, sans-serif;
     }
-</style>
+</style>";
+
+?>

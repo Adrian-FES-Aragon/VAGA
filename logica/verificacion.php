@@ -16,8 +16,9 @@ if($array['contar'] > 0){
     header("location: ../consulta.php");
 }
 else {
-    header("Status: 301 Moved Permanently");
-    header("HTTP/1.0 404 Not Found");
-    exit;
+    echo'<script type="text/javascript">
+    alert("Error en usuario / contraseña, intenta de nuevo. ");
+    window.location.href="../index.php";
+    </script>';
 }
 ?>

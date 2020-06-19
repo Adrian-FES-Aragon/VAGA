@@ -1,3 +1,10 @@
+<?php
+session_start();
+$carry = $_SESSION['noCuenta'];
+if (!isset($carry)) {
+    header("location: index.php");
+} else {
+    echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,14 +17,8 @@
     <title>Eliminar</title>
 </head>
 
-<body class="body1">
-    <?php
-    session_start();
-    $carry = $_SESSION['noCuenta'];
-    if (!isset($carry)) {
-        header("location: index.php");
-    } else {
-    
+<body class="body1">';
+
     include("./assets/header.php");
     //$aVar = mysqli_connect('localhost','root','','php_test');
     echo '
@@ -50,12 +51,14 @@
     <INPUT TYPE="SUBMIT" value="BORRAR" class="btn1" style="font-size:.6em">
     <input type="button" style="font-size:.6em" onclick="location.href=`./consulta.php`" value="REGRESAR" class="btn1">
         </div>
-        </form>';
+        </form>
 }
-    ?>
-    </select>
-    </div>
-    </div>
+</select>
+</div>
+</div>
 </body>
 
 </html>
+';
+}
+?>
