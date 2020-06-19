@@ -15,7 +15,7 @@ if (!isset($carry)) {
     //no es requisito obligatorio, independiente de los erroes
     require("./logica/conexion.php");
 
-    $consulta_sql = "SELECT * FROM BIENES";
+    $consulta_sql = "SELECT id, id_dueño, IF(TieneDueño, 'SI', 'NO') TieneDueño, tipo FROM bienes";
     //mandar el query por medio de la conexion y almacenaremos en una variable
     $resultado = $conn->query($consulta_sql);
     //retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
@@ -27,32 +27,32 @@ if (!isset($carry)) {
         <div align='center' style='overflow-x:auto'>
         <table >
         <tr>
-        <th>TieneDueño</th>
-        <th>EslapTop</th>
-        <th>id</th>
-        <th>id_dueño</th>
+        <th>id de item</th>
+        <th>Esta asignada</th>
+        <th>id de Dueño Asignado</th>
+        <th>Tipo de equipo</th>
         </div>
         </body>";
         //aqui se pintarian los registros de la BD 
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo "<tr>";
-            echo "<td>" . $row['TieneDueño'] .         "</td>";
-            echo "<td>" . $row['EslapTop'] .     "</td>";
-            echo "<td>" . $row['id'] .     "</td>";
-            echo "<td>" . $row['id_dueño'] .     "</td>";
+            echo "<td>" . $row['id'] .         "</td>";
+            echo "<td>" . $row['TieneDueño'] . "</td>";
+            echo "<td>" . $row['id_dueño'] .   "</td>";
+            echo "<td>" . $row['tipo'] .       "</td>";
             echo "</tr>";
         }
         echo "</table>";
+        echo "<br>";
+        echo "<input type='button' style='font-size:.6em' onclick='location.href=`consulta.php`' value='USUARIOS' class='btn1'> <br><br>"; 
     } else {
         echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
 }
 
-echo "<br>";
 
 //echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
 //echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
-echo "<input type='button' style='font-size:.6em' onclick='location.href=`consulta.php`' value='REGISTROS' class='btn1'> <br><br>"; 
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 echo "
@@ -73,7 +73,7 @@ echo "
     table {
         text-align: center;
         border-collapse: collapse;
-        width: 80%;
+        width: 30%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 

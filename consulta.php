@@ -35,6 +35,7 @@ if (!isset($carry)) {
         <th>Correo</th>
         <th>Contraseña</th>
         <th>Fecha de registro</th>
+        <th>Cargo</th>
         <th>Nivel de permisos</th>
         </div>
         </body>";
@@ -47,19 +48,20 @@ if (!isset($carry)) {
             echo "<td>" . $row['correo'] .     "</td>";
             echo "<td>" . $row['password'] .   "</td>";
             echo "<td>" . $row['date'] .       "</td>";
+            echo "<td>" . $row['cargo'] .       "</td>";
             echo "<td>" . $row['perm'] .       "</td>";
             echo "</tr>";
         }
-        echo "</table>";
+        echo "</table><br>";
+        echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
+        echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
+        echo "<input type='button' style='font-size:.6em' onclick='location.href=`bienes.php`' value='ACTIVO FIJO' class='btn1'> <br><br>"; 
     } else {
         echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
 }
 echo "<br>";
 
-echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
-echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
-echo "<input type='button' style='font-size:.6em' onclick='location.href=`bienes.php`' value='ACTIVO FIJO' class='btn1'> <br><br>"; 
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 
@@ -71,7 +73,7 @@ echo "
     }
 
     body {
-        background: url('assets/back2.jpg') repeat center fixed;
+        background: url('assets/back3.jpg') repeat center fixed;
         color: white;
         background-size: cover;
         font-size: 1.5em;
