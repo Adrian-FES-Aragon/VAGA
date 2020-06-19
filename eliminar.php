@@ -29,8 +29,7 @@ if (!isset($carry)) {
         <h2 class="h21" style="margin-left: 30px">ELIMINAR</h2>
     </header>
     <div class=" div1 " style=" margin-top:50px ">
-    <div  align="center">
-';
+    <div  align="center">';
 
     //Conexion con la base ---------------
     require "./logica/conexion.php";
@@ -38,13 +37,13 @@ if (!isset($carry)) {
     echo "<FORM METHOD='POST' ACTION='./logica/logica_eliminar.php' class='form1 data'> Usuario a eliminar: <br >
         <div align='center'>";
     //Creamos la sentencia SQL y la ejecutamos
-    $sSQL = "SELECT user FROM usuarios ORDER BY id";
+    $sSQL = "SELECT nombre FROM usuarios ORDER BY id";
     $result = $conn->query($sSQL);
 
     //Mostramos los registros en forma de menú desplegable
-    echo '<select name="nombre" class="text1 data2 ">';
+    echo '<select name="borrar" class="text1 data2 ">';
     while ($row = mysqli_fetch_array($result)) {
-        echo '<option>' . $row["user"];
+        echo '<option>' . $row["nombre"];
     }
     mysqli_free_result($result);
     echo '<br>

@@ -1,4 +1,3 @@
-
 DROP SCHEMA IF EXISTS `php_test`;
 CREATE SCHEMA IF NOT EXISTS `php_test` DEFAULT CHARACTER SET utf8 collate utf8_spanish2_ci;
 USE `php_test`;
@@ -12,6 +11,8 @@ CREATE TABLE `usuarios` (
     `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `perm` int(11) NOT NULL DEFAULT '3'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `usuarios` (`id`,`user`, `nombre`, `correo`, `password`,`date`,`perm`) VALUES
+(1, 'root','Gabriel Ore Durán', 'allright@gmail.com', '0000','1000-01-10 00:00:00',1);
 
 CREATE TABLE `bienes` (
   `TieneDueño` boolean NOT NULL,
@@ -21,3 +22,6 @@ CREATE TABLE `bienes` (
   KEY `id_dueño` (`id_dueño`),
   CONSTRAINT `ID_DUEÑO` FOREIGN KEY (`id_dueño`) REFERENCES `usuarios` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+INSERT INTO `bienes` (`TieneDueño`,`EslapTop`, `id`, `id_dueño`) VALUES
+(true, True, 1, 1);

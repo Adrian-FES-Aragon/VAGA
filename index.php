@@ -28,8 +28,8 @@
             <div align="center">
                 <form id="form1" method="POST" action="./logica/verificacion.php" class="form1">
                     <div class="div2">
-                        <label class="data">Usuario</label>
-                        <input type="text " name="txtusuario" class="text1 data" placeholder=" Nombre de usuario " required/>
+                        <label class="data">Correo</label>
+                        <input type="text " name="txtusuario" class="text1 data" placeholder=" Correo electronico " required/>
                     </div>
                     <div class="div2">
                         <label class="data">Contraseña</label>

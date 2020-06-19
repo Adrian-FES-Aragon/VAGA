@@ -8,7 +8,7 @@ mysqli_set_charset($conn, 'utf8');
 //declaracion de variables para formulario
 $form_pass= $_POST ['password'];
 //validacion si el usuario ya esta registrado
-$buscarUsuario="SELECT * FROM usuarios WHERE user = '$_POST[nombre_usuario]'";
+$buscarUsuario="SELECT * FROM usuarios WHERE correo = '$_POST[email]'";
 //mandar al query
 $result=$conn->query($buscarUsuario);
 //saber si tenemos un resultado y se almacena en una variable

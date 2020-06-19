@@ -9,7 +9,7 @@ $carry = $_SESSION['noCuenta'];
 //Conexion con la base
 require "conexion.php";
 //Creamos la sentencia SQL y la ejecutamos
-$sSQL = "DELETE FROM USUARIOS WHERE user='{$_POST["nombre"]}'";
+$sSQL = "DELETE FROM USUARIOS WHERE nombre='{$_POST["borrar"]}'";
 $result = $conn->query($sSQL);
 
 echo"<body class='sansserif'> 

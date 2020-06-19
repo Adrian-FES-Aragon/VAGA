@@ -30,7 +30,7 @@ if (!isset($carry)) {
         <table >
         <tr>
         <th>ID</th>
-        <th>Usuario</th>
+        <th>Tipo de Usuario</th>
         <th>Nombre completo</th>
         <th>Correo</th>
         <th>Contraseña</th>
@@ -59,11 +59,12 @@ echo "<br>";
 
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`bienes.php`' value='ACTIVO FIJO' class='btn1'> <br><br>"; 
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 
 echo "
-<title>Consulta</title>
+<title>Consulta Usuarios</title>
 <style>
     a {
         color: white;
