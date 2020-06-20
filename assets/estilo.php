@@ -61,13 +61,20 @@ echo"
     font-weight: lighter;
     font-size: 1.4em;
     color: white;
-    background: #302E2E;
     text-align: left;
     width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+}
+.data2:hover {
+    background-color: black;
+  color: white;
 }
 .form1{
     width: 45%;
-
 }
 
 .btn1 {

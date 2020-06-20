@@ -24,9 +24,10 @@ if (!isset($carry)) {
 
     
     if ($count > 0) {
-        echo "<h1 class='h21'>REGISTROS</h1>";
+        echo "<h1 class='h21'>EMPLEADOS</h1>";
         echo "<body  class='sansserif'>
         <div align='center' style='overflow-x:auto'>
+        <input type='button' style='font-size:.6em' onclick='location.href=`bienes.php`' value='ACTIVO FIJO' class='btn1'> <br><br> 
         <table >
         <tr>
         <th>ID</th>
@@ -54,8 +55,7 @@ if (!isset($carry)) {
         }
         echo "</table><br>";
         echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
-        echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
-        echo "<input type='button' style='font-size:.6em' onclick='location.href=`bienes.php`' value='ACTIVO FIJO' class='btn1'> <br><br>"; 
+        echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br>";
     } else {
         echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
@@ -73,9 +73,9 @@ echo "
     }
 
     body {
-        background: url('assets/back3.jpg') repeat center fixed;
+        background: url('assets/back3.png') repeat center fixed;
         color: white;
-        background-size: cover;
+        background-size: 100% 100%;
         font-size: 1.5em;
         
     }
@@ -106,7 +106,7 @@ echo "
     }
 
     tr:hover {
-        background-color: black;
+        background-color: #633AAF;
     }
 
     tr:nth-child(even) {

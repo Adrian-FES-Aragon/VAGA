@@ -25,6 +25,7 @@ if (!isset($carry)) {
         echo "<h1 class='h21'>ACTIVO FIJO</h1>";
         echo "<body  class='sansserif'>
         <div align='center' style='overflow-x:auto'>
+        <input type='button' style='font-size:.6em' onclick='location.href=`consulta.php`' value='EMPLEADOS' class='btn1'> <br><br>
         <table >
         <tr>
         <th>id de item</th>
@@ -44,7 +45,6 @@ if (!isset($carry)) {
         }
         echo "</table>";
         echo "<br>";
-        echo "<input type='button' style='font-size:.6em' onclick='location.href=`consulta.php`' value='USUARIOS' class='btn1'> <br><br>"; 
     } else {
         echo "<h1 style='color:red'>  Sin ningun registro</h1>";
     }
@@ -56,14 +56,14 @@ if (!isset($carry)) {
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 echo "
-<title>Consulta Usuarios</title>
+<title>Activo Fijo</title>
 <style>
     a {
         color: white;
     }
 
     body {
-        background: url('assets/back2.jpg') repeat center fixed;
+        background: url('assets/back3.png') repeat center fixed;
         color: white;
         background-size: cover;
         font-size: 1.5em;
@@ -96,7 +96,7 @@ echo "
     }
 
     tr:hover {
-        background-color: black;
+        background-color: #633AAF;
     }
 
     tr:nth-child(even) {

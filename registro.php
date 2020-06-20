@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="assets/estilo.php">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -8,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
 </head>
+
 <body class="body1">
     <?php
     include("assets/header.php");
@@ -27,13 +29,37 @@
             <form action="logica/logica_registro.php" method="POST" class="form1">
                 <div class="div2">
                     <label for="nombre_usuario" class="data"> Usuario: </label><br>
-                    <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" required>
+                    <!-- <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" required> -->
+                    <select class="data2" name="nombre_usuario" required>
+                        <option value="" selected disabled hidden>Selecciona el tipo de usuario.</option>
+                        <option value="root">root</option>
+                        <option value="admin">admin</option>
+                        <option value="user">user</option>
+                    </select>
                     <br><br>
                     <label for="nombre_completo" class="data"> Nombre: </label><br>
                     <input type="text" class="text1 data" name="nombre_completo" maxlength="255" placeholder=" Nombre completo" required>
                     <br><br>
                     <label for="email" class="data"> Email: </label><br>
                     <input type="email" class="text1 data" name="email" maxlength="35" placeholder=" Correo electronico" required>
+                    <br><br>
+                    <label for="nombre_usuario" class="data"> Puesto: </label><br>
+                    <select class="data2" name="job" required>
+                        <option value="" selected disabled hidden>Selecciona el cargo.</option>
+                        <option value="default">Gerente General</option>
+                        <option value="EDAYS">Especialista DAYS</option>
+                        <option value="EAP">Especialista AP</option>
+                        <option value="EP">Especialista Programador</option>
+                        <option value="ED">Especialista de Desarrollo</option>
+                        <option value="EGYT">Especialista GYT</option>
+                        <option value="EABD">Especialista ABD</option>
+                        <option value="EADR">Especialista ADR</option>
+                        <option value="E P">Especialista Produccion</option>
+                        <option value="TS">Tecnico Soporte</option>
+                        <option value="TT">Tecnico Telecomunicaciones</option>
+                        <option value="TP">Tecnico Producción</option>
+                    </select>
+
                     <br><br>
                     <label for="password" class="data"> Contraseña: </label><br>
                     <input type="password" class="text1 data" name="password" maxlength="10" placeholder=" Contraseña elegida" required>
