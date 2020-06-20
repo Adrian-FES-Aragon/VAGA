@@ -33,12 +33,14 @@ if ($count == 1 ) { //si se encentra algun reegistro
     user,
     nombre, 
     correo,
-    password)
+    password,
+    cargo)
     VALUES(
     '$_POST[nombre_usuario]',
     '$_POST[nombre_completo]',
     '$_POST[email]',
-    '$_POST[password]'
+    '$_POST[password]',
+    '$_POST[cargo]'
     
     )");
     echo"<body class='sansserif'>

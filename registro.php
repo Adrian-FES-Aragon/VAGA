@@ -7,17 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario nuevo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-            $('body').on('click', '.opt', function(){
-                alert("hola");
-                document.getElementById('data2').innerHTML=$(this).attr('id');
-                console.log(($this).attr('id'));
-            }
-            )
-        });
-    </script>
 </head>
 <body class="body1">
     <?php
@@ -41,9 +30,9 @@
                     <!-- <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" required> -->
                     <select class="data2 " name="nombre_usuario" required>
                         <option value="" selected disabled hidden>Selecciona el tipo de usuario.</option>
-                        <option id="1"  class="opt" value="root">root</option>
-                        <option id="2" class="opt" value="admin">admin</option>
-                        <option id="3" class="opt" value="user">user</option>
+                        <option class="opt" value="root">root</option>
+                        <option class="opt" value="admin">admin</option>
+                        <option class="opt" value="user">user</option>
                     </select>
                     <br><br>
                     <label for="nombre_completo" class="data"> Nombre: </label><br>
@@ -53,20 +42,20 @@
                     <input type="email" class="text1 data" name="email" maxlength="35" placeholder=" Correo electronico" required>
                     <br><br>
                     <label for="nombre_usuario" class="data"> Puesto: </label><br>
-                    <select class="data2" id="sel2" name="job" required>
+                    <select class="data2" name="cargo" required>
                         <option value="" selected disabled hidden>Selecciona el cargo.</option>
-                        <option value="default">Gerente General</option>
-                        <option value="EDAYS">Especialista DAYS</option>
-                        <option value="EAP">Especialista AP</option>
-                        <option value="EP">Especialista Programador</option>
-                        <option value="ED">Especialista de Desarrollo</option>
-                        <option value="EGYT">Especialista GYT</option>
-                        <option value="EABD">Especialista ABD</option>
-                        <option value="EADR">Especialista ADR</option>
-                        <option value="E P">Especialista Produccion</option>
-                        <option value="TS">Tecnico Soporte</option>
-                        <option value="TT">Tecnico Telecomunicaciones</option>
-                        <option value="TP">Tecnico Producción</option>
+                        <option value="Gerente General">Gerente General</option>
+                        <option value="Especialista DAYS">Especialista DAYS</option>
+                        <option value="Especialista AP">Especialista AP</option>
+                        <option value="Especialista Programador">Especialista Programador</option>
+                        <option value="Especialista de Desarrollo">Especialista de Desarrollo</option>
+                        <option value="Especialista GYT">Especialista GYT</option>
+                        <option value="Especialista ABD">Especialista ABD</option>
+                        <option value="Especialista ADR">Especialista ADR</option>
+                        <option value="Especialista Produccion">Especialista Produccion</option>
+                        <option value="Tecnico Soporte">Tecnico Soporte</option>
+                        <option value="Tecnico Telecomunicaciones">Tecnico Telecomunicaciones</option>
+                        <option value="Tecnico Producción">Tecnico Producción</option>
                     </select>
                     <br><br>
                     <label for="password" class="data"> Contraseña: </label><br>

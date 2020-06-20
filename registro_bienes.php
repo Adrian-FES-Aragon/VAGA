@@ -26,17 +26,18 @@
         <div align="center">
             <form action="logica/logica_registro.php" method="POST" class="form1">
                 <div class="div2">
-                <label for="item" class="data"> Activo: </label><br>
-                <select class="data2" name="item_type" required>
+                    <label for="item" class="data"> Activo: </label><br>
+                    <select class="data2" name="item_type" required>
                         <option value="" selected disabled hidden>Selecciona el tipo de activo:</option>
-                        <option value="i1">PC escritorio</option>
-                        <option value="i2">Laptop</option>
-                        <option value="i3">user</option>
-                    </select>
-                <label for="item" class="data"> Usuario asignado: </label><br>
-                <?php
-                require "./logica/conexion.php";
-                ?>
+                        <option value="PC escritorio">PC escritorio</option>
+                        <option value="Laptop">Laptop</option>
+                    </select><br><br>
+
+                    <label for="item" class="data"> Usuario a asignar: </label><br>
+                    <?php
+                    require "./logica/conexion.php";
+
+                    ?>
                 </div>
             </form>
         </div>
