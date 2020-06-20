@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" type="text/css" href="assets/estilo.php">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="Shortcut icon" href="assets/vicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registro de Usuario nuevo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+            $('body').on('click', '.opt', function(){
+                alert("hola");
+                document.getElementById('data2').innerHTML=$(this).attr('id');
+                console.log(($this).attr('id'));
+            }
+            )
+        });
+    </script>
 </head>
-
 <body class="body1">
     <?php
     include("assets/header.php");
@@ -30,11 +39,11 @@
                 <div class="div2">
                     <label for="nombre_usuario" class="data"> Usuario: </label><br>
                     <!-- <input type="text" class="text1 data" name="nombre_usuario" placeholder=" Nombre de Usuario" maxlength="155" required> -->
-                    <select class="data2" name="nombre_usuario" required>
+                    <select class="data2 " name="nombre_usuario" required>
                         <option value="" selected disabled hidden>Selecciona el tipo de usuario.</option>
-                        <option value="root">root</option>
-                        <option value="admin">admin</option>
-                        <option value="user">user</option>
+                        <option id="1"  class="opt" value="root">root</option>
+                        <option id="2" class="opt" value="admin">admin</option>
+                        <option id="3" class="opt" value="user">user</option>
                     </select>
                     <br><br>
                     <label for="nombre_completo" class="data"> Nombre: </label><br>
@@ -44,7 +53,7 @@
                     <input type="email" class="text1 data" name="email" maxlength="35" placeholder=" Correo electronico" required>
                     <br><br>
                     <label for="nombre_usuario" class="data"> Puesto: </label><br>
-                    <select class="data2" name="job" required>
+                    <select class="data2" id="sel2" name="job" required>
                         <option value="" selected disabled hidden>Selecciona el cargo.</option>
                         <option value="default">Gerente General</option>
                         <option value="EDAYS">Especialista DAYS</option>
@@ -59,7 +68,6 @@
                         <option value="TT">Tecnico Telecomunicaciones</option>
                         <option value="TP">Tecnico Producción</option>
                     </select>
-
                     <br><br>
                     <label for="password" class="data"> Contraseña: </label><br>
                     <input type="password" class="text1 data" name="password" maxlength="10" placeholder=" Contraseña elegida" required>

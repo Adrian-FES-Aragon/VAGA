@@ -15,7 +15,7 @@ if (!isset($carry)) {
     //no es requisito obligatorio, independiente de los erroes
     require("./logica/conexion.php");
 
-    $consulta_sql = "SELECT id, id_dueño, IF(TieneDueño, 'SI', 'NO') TieneDueño, tipo FROM bienes";
+    $consulta_sql = "SELECT id, IF(id_dueño, id_dueño, 'DUEÑO NO ASIGNADO')id_dueño, IF(TieneDueño, 'SI', 'NO') TieneDueño, tipo FROM bienes";
     //mandar el query por medio de la conexion y almacenaremos en una variable
     $resultado = $conn->query($consulta_sql);
     //retorna el numero de filas del resultado. Si encuentra más de uno lo usamos para imprimir el resultado en nuestra tabla
@@ -53,6 +53,7 @@ if (!isset($carry)) {
 
 //echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro.php`' value='AGREGAR USUARIO' class='btn1'> ";
 //echo "<input type='button' style='font-size:.6em' onclick='location.href=`eliminar.php`' value='ELIMINAR USUARIO' class='btn1'> <br><br>";
+echo "<input type='button' style='font-size:.6em' onclick='location.href=`registro_bienes.php`' value='NUEVO AF' class='btn1'> ";
 echo "<input type='button' style='font-size:.6em' onclick='location.href=`./logica/salir.php`' value='SALIR' class='btn1'> ";
 
 echo "
